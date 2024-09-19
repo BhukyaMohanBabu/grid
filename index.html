@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-area</title>
+    <style>
+        img{
+             width:100%;
+             height:100%;
+       
+        }
+        @media screen and (min-width:0px) and (max-width:250px) {
+            .md{
+                display: grid;
+                
+                
+
+            }
+            .item{
+            border:2px solid blue;
+        }
+            
+        }
+        @media screen and (min-width:251px) and (max-width:10000px){
+            
+        
+        .md{
+            display:grid;
+            grid-template-columns: repeat(3,150px);
+            grid-template-rows: repeat(4,120px);
+            justify-content: center;
+            /* align-content: center; */
+            border:2px solid red;
+            height:600px;
+            align-content: center;
+            background-color: blueviolet;
+
+            
+            
+        }
+        .item{
+            border:2px solid blue;
+            
+
+        
+        }
+        .item:hover{
+            border:red; 
+            
+        }
+        .item2{
+            grid-column-start:2;
+            grid-row: 1/3;
+        }
+        .item1{
+            grid-column-start:2;
+            grid-row: 3/5;
+        }
+    }
+               
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="md">
+    
+       <div class="item item1"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREYOprH-cw87ljgNZ3b6yIKdQ0GDI63oYIsw&s" alt="">
+       </div>
+       <div class="item item2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcevt8_WpqQSRyPCiJhhWjQTOVuAVSzSZVHA&s" alt="">
+       </div>
+       <div class="item item3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsIbReBDGCGHB-tWdLVPhuhkPHiXy9g5YD7A&s" alt="">
+       </div>
+       <div class="item item4">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202404/virat-kohli-073650424-1x1.jpg?VersionId=ikBbzxloGoQ3Sishzo20fBK.RgjKAH3_" alt="">
+       </div>
+       <div class="item item5">
+        <img src="https://render.fineartamerica.com/images/rendered/default/wood-print/6.5/10/break/images/artworkimages/medium/3/virat-kohli-wallpaper-vinay-sainath.jpg" alt="">
+       </div>
+       <div class="item item6">
+        <img src="https://m.media-amazon.com/images/I/61CG8tD+GFL._AC_UF1000,1000_QL80_.jpg" alt="">
+       </div>
+       <div class="item item7">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIitqVOZZpdeveSC0KSVEvo6OBOYk5jNcq4Q&s" alt="">
+       </div>
+       <div class="item item8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuP2fncUwoo5rXboY9ov0nIEHkYdg_ZOo4w&s" alt="">
+       </div>
+       <div class="item item9">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrIAR6C5qR11YgK-HZyZUvgMzFjZyoDRgq9gYrSz2LsMtpp_aPwuppbcUMAKe9KuO9Uoo&usqp=CAU" alt="">
+       </div>
+       <div class="item item10">
+        <img src="https://images.indianexpress.com/2024/05/VIRAT-KOHLI-ORANGE-CAP-PTI-CROP-1.jpg" alt="">
+       </div>
+    </div>
+</body>
+</html>
